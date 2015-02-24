@@ -36,7 +36,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class LaunchSuite {
 
 	// QA Environment
-	private static final String ENVIRONMENT = "https://webapp4-qa.asu.edu/";
+	private static final String ENVIRONMENT = "***The link to the QA or Prod Environment goes her***(Basically a parent link)";
 
 	// Global WebDriver
 	private static WebDriver driver = new FirefoxDriver();
@@ -89,36 +89,37 @@ public class LaunchSuite {
 		final String PASSWORD = MainFrame.passString;
 
 		// Navigate through all Tabs and capture all the links
-		driver.get(ENVIRONMENT + "myasu/student/finances");
-		FindAllLinks("Student - Finances");
+		driver.get(ENVIRONMENT + "***links to various tabs***");
+		FindAllLinks("***Name of the tab***");
 
-		driver.get(ENVIRONMENT + "myasu/student/campusservices");
-		FindAllLinks("Student - Campus Services");
+		driver.get(ENVIRONMENT + "***links to various tabs***");
+		FindAllLinks("***Name of the tab***");
 
-		driver.get(ENVIRONMENT + "myasu/student/profile");
-		FindAllLinks("Student - Profile");
+		driver.get(ENVIRONMENT + "***links to various tabs***");
+		FindAllLinks("***Name of the tab***");
 
-		driver.get(ENVIRONMENT + "myasu/student");
-		FindAllLinks("Student - Home");
+		driver.get(ENVIRONMENT + "***links to various tabs***");
+		FindAllLinks("***Name of the tab***");
 
-		driver.get(ENVIRONMENT + "myasu/staff/resources");
-		FindAllLinks("Staff - Resources");
+		driver.get(ENVIRONMENT + "***links to various tabs***");
+		FindAllLinks("***Name of the tab***");
 
-		driver.get(ENVIRONMENT + "myasu/staff/service");
-		FindAllLinks("Staff - Service");
+		driver.get(ENVIRONMENT + "***links to various tabs***");
+		FindAllLinks("***Name of the tab***");
 
-		driver.get(ENVIRONMENT + "myasu/staff/profile");
-		FindAllLinks("Staff - Profile");
+		driver.get(ENVIRONMENT + "***links to various tabs***");
+		FindAllLinks("***Name of the tab***");
 
-		driver.get(ENVIRONMENT + "myasu/staff");
-		FindAllLinks("Staff - Home");
+		driver.get(ENVIRONMENT + "***links to various tabs***");
+		FindAllLinks("***Name of the tab***");
+		
+		// newer tabs can be added in similar fashion
 
-		driver.get("https://myasu.force.com/");
-		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-		FindAllLinks("Student - Service Center");
+		driver.get(ENVIRONMENT + "***links to various tabs***");
+		FindAllLinks("***Name of the tab***");
 
-		driver.get(ENVIRONMENT + "myasu/staff/teaching");
-		FindAllLinks("Staff - teaching");
+		driver.get(ENVIRONMENT + "***links to various tabs***");
+		FindAllLinks("***Name of the tab***");
 
 		// Closes the writers
 		CloseAllWriters();
